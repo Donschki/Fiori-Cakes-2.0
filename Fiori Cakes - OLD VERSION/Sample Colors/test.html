@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html>
+
+    <head>
+         <title>Fading Slideshow</title>
+
+      <style>
+
+        body {
+
+             background-color: red;
+        }
+
+        #slider {
+ 
+             margin: auto;
+             width: 800px;
+             height: 450px;
+             margin-top: 100px;
+
+        } 
+
+        #slider a {
+
+             position: absolute;
+
+        }
+
+        #slider img {
+
+             padding: 10px;
+             border: 1px solid #ccc;
+             width: 800px;
+             height: 450px;
+             background-color: #fff;
+
+        }
+
+        #slider a:nth-of-type(1) {
+ 
+             animation-name: fader;
+             animation-delay: 4s;
+             animation-duration: 1s ;
+             z-index: 20;
+
+        }
+
+        #slider a:nth-of-type(2) {
+
+             z-index: 10;
+
+        }
+
+        #slider a:nth-of-type(n+3) {
+
+             display: none;
+
+        }
+
+        @keyframes fader {
+
+             from{opacity: 1.0;}
+             to {opacity: 0.0;};
+             
+        }
+
+      </style>   
+     </head>
+
+         <body>
+             <div id="slider">
+
+                <a href="Cakes/Floral-Cake-1.jpg"> <img src="Cakes/Floral-Cake-1.jpg"> </a> 
+                <a href="Cakes/Floral-Cake-2.jpg"> <img src="Cakes/Floral-Cake-2.jpg"> </a> 
+                <a href="Cakes/Floral-Cake-3.jpg"> <img src="Cakes/Floral-Cake-3.jpg"> </a> 
+                <a href="Cakes/Floral-Cake-4.jpg"> <img src="Cakes/Floral-Cake-4.jpg"> </a> 
+                <a href="Cakes/Floral-Cake-5.jpg"> <img src="Cakes/Floral-Cake-5.jpg"> </a> 
+
+             </div>
+             <script>
+ 
+                 document.addEventListener("DOMContentLoaded", function() {
+               
+                 var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+               
+                 var stage = document.getElementById("slider");
+                 var arr = stage.getElementsByTagName("a");
+                 for(var i=0; i < arr.length; i++) {
+                    
+                 arr[i].addEventListener("animationend", fadeComplete, false);
+                    
+                }
+               
+                }, false);
+               
+              </script>
+
+
+         </body>
+
+ </html>

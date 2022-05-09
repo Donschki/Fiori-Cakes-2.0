@@ -1,0 +1,1785 @@
+
+ * {
+
+     margin: 0;
+     padding: 0;
+
+}
+
+ html {
+
+     height: 100vh;
+
+}
+
+ body {
+
+    font-family: Times, Times New Roman, sans-serif;
+    font-style: italic;
+    background: linear-gradient(
+
+    rgba(243, 165, 225, 0.507),
+    rgba(236, 230, 235, 0.514),          
+    rgba(233, 154, 217, 0.432)
+
+   ), 
+
+    url('Background/Pink-Blotch-2.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: black solid 4px; 
+    height: 280%;
+    width: 100%;
+    margin: 0;
+}
+
+ #headings {
+
+     font-size: 25px;
+     color: white;
+     text-align: center;
+     margin-top: 150px;
+}
+
+ #paragraphs {
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+ /*---------------------------------------- Navigation Bar Section-------------------------------------------- */
+
+ .nav-headings {
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    position: absolute; 
+}
+
+ .nav-bar {
+
+    background-color: #F1ABB9;
+    width: 100%;
+    height: 100px;
+
+    left: 0;
+    top: -100px;
+
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
+ 
+    transition: top 0.5s cubic-bezier(1,1,1,1);
+ 
+    border-radius: 0 0 30% 30%;
+    box-shadow: 0 0 20px white;
+
+}
+
+ .change {
+
+    top: 0;
+}
+
+ .social-media-container {
+
+    width: 500px;
+    height: 90px;
+    position: absolute;
+    right: 250px;
+  
+}
+
+ .instagram-container {
+
+    width: 100px;
+    height: 85px;
+    left: 0px;
+   
+    position: relative; 
+    float: left;
+    
+    justify-content: center;
+}
+
+ .instagram-container img {
+    
+    padding: 12px;
+    position: relative;
+}
+
+ .facebook-container {
+
+    width: 90px;
+    height: 85px;
+     
+    position: relative;  
+    float: left;
+}
+
+ .facebook-container img {
+
+    padding: 11px;
+    position: relative;
+    left: -2px; 
+}
+
+ .phone-container {
+
+    position: relataive;
+    left: 40px ;
+    width: 130px;
+    height: 85px;
+   
+    float: left;
+ 
+}
+
+ .phone-container img {
+
+    position: relative;
+}
+ 
+ .email-container {
+
+    position: relative;
+    left: 0px ;
+    width: 63px;
+    height: 85px;
+   
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+ .email-container img {
+
+    position: relative;
+}
+
+ .hamburger-menu {
+
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+    padding: 10px;
+    background-color: #F1ABB9;
+    box-shadow: 0 0 20px white;
+    border-radius: 50%;
+        
+}
+
+ .hamburger-menu:hover {
+
+   box-shadow: 0px 0px 20px 20px #F1ABB9;
+   border-width: 20px;
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #FFD1DC;
+
+}
+
+ .line {
+
+    width: 100%;
+    height: 4px;
+    border: rgb(255, 252, 252) solid 2px ;
+    transition: all 0.5s;
+    background-color: rgb(255, 255, 255);
+    border: hidden;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px white;
+}
+
+ .change .line-1 {
+
+    transform: rotate(-405deg) translate(-10px, 8px);
+    
+}
+
+ .change .line-2 {
+
+    opacity: 0;
+}
+
+ .change .line-3 {
+
+    transform: rotate(405deg) translate(-10px, -8px);
+}
+
+ #list-items {
+   
+    font-size: 23px;
+    word-spacing: 60px;
+    text-transform: uppercase;
+    list-style: none;    
+
+}
+
+ .nav-link {
+
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none ;
+    top:30px;
+    left: -150px;
+
+    border-radius: 100%;
+    border-width: 10px;
+  
+
+}
+
+ .nav-link:hover {
+
+    box-shadow: 0px 0px 20px 20px #FFD1DC;
+    border-width: 20px;
+    border-radius: 100%;
+   
+    background-color: #FFD1DC;
+    z-index: 3;
+    position: relative;
+   
+   
+}
+
+/*------------------------------------------ Activate Navbar Transition------------------------------------------------ */
+
+ .hamburger-menu {
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+        
+    padding: 10px;
+    background-color: #F1ABB9;
+
+    
+    border-radius: 100%;
+    box-shadow: 0 0 20px white;
+
+    top: 10px;
+    left: 10px;
+
+  
+        
+}
+
+ .hamburger-menu:hover {
+
+    box-shadow: 0 0 30px 30px #ffffff;
+    border-width: 20px;
+    border-radius: 100%;
+   
+    background-color: #F1ABB9;
+    transition: ease-in-out 0.5s;
+    
+
+}
+
+ .line {
+
+     width: 100%;
+     height: 4px;
+     border: rgb(255, 252, 252) solid 2px ;
+     transition: all 0.5s;
+     background-color: rgb(255, 255, 255);
+     border: hidden;
+     border-radius: 3px;
+     box-shadow: 0 0 1px 1px white;
+}
+
+ .change .line-1 {
+
+    transform: rotate(-405deg) translate(-10px, 8px);
+    
+}
+
+ .change .line-2 {
+
+    opacity: 0;
+}
+
+ .change .line-3 {
+
+    transform: rotate(405deg) translate(-10px, -8px);
+}
+
+ #list-items {
+    
+     font-size: 21px;
+     word-spacing: 60px;
+     text-transform: uppercase;
+     list-style: none;
+     text-shadow: rgb(248, 244, 244) ;
+     margin-bottom: 60px;
+
+}
+
+ .nav-link {
+
+     position: relative;
+     color: rgb(255, 255, 255);
+     text-decoration: none ;
+     top:30px;
+
+     border-radius: 100%;
+     border-width: 10px;
+     text-decoration: wavy;
+   
+
+}
+
+ .nav-link:hover {
+
+    box-shadow: 0px 0px 20px 20px #FFD1DC;
+    border-width: 20px;
+    border-radius: 100%;
+   
+    background-color: #FFD1DC;
+    z-index: 3;
+    position: relative;
+    transition: ease-in-out 0.5s;
+    
+   
+}
+
+/* ---------------------------------------- logo Section ---------------------------------------*/
+
+ .logo-section {
+
+     width: 100%;
+     height: 100%;
+     position: fixed;
+ 
+     display: flex;
+     justify-content: center;
+    
+}
+
+ #logo-backdrop {
+
+     position: fixed;
+     left: 450px;   
+}
+
+ .logo-container img {
+
+     width: 100%;
+     height: 100%;
+   
+     border-radius: 100%;
+   
+}
+
+/* ------------------------------------- Shelves Section -------------------------------------*/
+
+ .shelves {
+
+     width: 1100px;
+     height: 350px;
+     border-bottom: solid #F1ABB9 12px;
+     
+     border-radius: 100%;
+     background-color: #f1abb998;
+     
+     z-index: -1;
+     margin-bottom: 140px;
+     margin-top: 100px;
+     margin-left: 90px;
+
+     
+}
+
+ .shelves a {
+
+     position: relative;   
+}
+
+ .container {
+
+     width: 300px;
+     height: 300px;
+
+     display: inline-flex;
+     position: relative;
+    
+     justify-content: center;
+     margin-left: 70px;
+   
+     margin-top: -70px;
+     
+     border-radius: 50%;
+     opacity: 100%;
+} 
+
+ .overlay {
+
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 300px;
+     width: 300px;
+     opacity: 0;
+     transition: 1s ease-in-out;
+     background-color: pink;
+     border-radius: 50%;
+}
+
+ .overlay:hover {
+
+     opacity: 100%;
+     width: 300px;
+     height: 300px;
+     transition: ease-in-out 1s;
+     
+
+}
+  
+ .text {
+     
+     color: white;
+     font-size: 20px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: center;
+}
+
+ .image {
+
+     width: 370px; 
+     height: 370px; 
+
+     border-radius: 100%; 
+     display: block;
+     width: 300px;
+     height: 300px;
+   
+     position: absolute;
+ 
+}
+
+/* ------------------------------------- Mobile Platforms -------------------------------------*/
+
+ @media only screen and (max-width: 401px) {
+
+     .headings {
+
+        font-size: 20px;
+    }    
+    
+     .hamburger-menu:hover {
+    
+       border-width: 20px;
+       border-radius: 100%;
+      
+       background-color: #F1ABB9;
+       box-shadow: 0 0 30px 30px #ffffff;
+    
+    }
+    
+     .nav-link {
+        
+        position: relative;
+        top: 25px;
+        
+    }
+    
+     .nav-item {
+    
+        position: absolute;
+        left: -150px;
+    
+    }
+
+     .nav-bar {
+       z-index: 100;
+       width: 100%;
+
+    }
+    
+     .social-media-container {
+    
+        position: absolute;
+        right: 10px;
+        border: black solid;
+        width: 300px;
+    }
+    
+     .instagram-container {
+    
+        position: relative;
+        top: -10px;
+        left: 30px;
+        float: right;
+    }
+    
+     .instagram-container img{
+    
+        position: relative;
+        top: 0px;
+    }
+    
+     .facebook-container {
+    
+        position: relative;
+        top: -10px;
+        left: 60px;
+        float: right;
+    }
+    
+     .facebook-container img{
+    
+        position: relative;
+        top: 0px;
+    }
+    
+     .phone-container {
+    
+        position: absolute;
+        top: 0px;
+        left: 50px;
+    }
+    
+     .phone-container img{
+    
+        position: relative;
+        top: 7px;
+    
+    }
+    
+     .email-container {
+    
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+     .email-container img{
+    
+        position: relative;
+        top: 20px;
+    }
+
+     #logo-backdrop {
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+        left: 0;
+        z-index: -5;
+    }
+
+     .shelves {
+
+        left: -90px;
+        position: relative;
+        width: 800px;
+        z-index: 9;
+    }
+
+     .container  {
+
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 20px;
+    }
+
+}
+
+ @media only screen and (min-width: 801px) {
+
+/*---------------------------------- Navigation Section------------------------------------*/
+ 
+.headings {
+
+    font-size: 20px;
+}    
+
+.hamburger-menu:hover {
+
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #ffffff;
+
+}
+
+.nav-link {
+    
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+}
+    
+.nav-bar {
+   z-index: 100;
+}
+
+.social-media-container {
+
+   width: 550px;
+   height: 95px;
+   position: absolute;
+   right: 50px;
+   top: 0;
+}
+
+.instagram-container {
+
+   width: 90px;
+   height: 100px;
+   left: 0px;
+   top: -15px;
+   position: relative; 
+   float: right; 
+}
+
+.instagram-container img {
+   
+   padding: 20px;
+   position: relative;
+}
+
+.facebook-container {
+
+   width: 60px;
+   height: 100px;
+    
+   position: relative;  
+   top: -15px; 
+   left: 0px;
+   float: right;
+}
+
+.facebook-container img {
+
+   padding: 20px;
+   position: relative;
+   left: -2px; 
+}
+
+.phone-container {
+
+   position: relataive;
+   left: 0px ;
+   width: 140px;
+   height: 85px;
+  
+}
+
+.phone-container img {
+
+   position: relative;
+   padding-top: 20px;
+  
+}
+
+.email-container {
+
+   position: relative;
+   left: 30px ;
+   width: 200px;
+   height: 85px;
+  
+   float: left;
+ 
+
+}
+
+.email-container img {
+
+   position: relative;
+   top: 27px;
+}
+
+.phone-container img {
+
+  position: relative;
+  top: 5px;  
+ 
+}
+
+.hamburger-menu {
+
+   position: fixed;
+   top: 10px;
+   left: 10px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   
+   padding: 10px;
+   background-color: #F1ABB9;
+   box-shadow: 0 0 20px white;
+   border-radius: 50%;
+       
+}
+
+.hamburger-menu:hover {
+
+  box-shadow: 0px 0px 20px 20px #ffffff;
+  border-width: 20px;
+  border-radius: 100%;
+ 
+  background-color: #F1ABB9;
+  box-shadow: 0 0 30px 30px #ffffff;
+}
+
+/*---------------------------------- Logo Section ------------------------------------*/
+
+ .logo-container img {
+
+    top: 30px;
+    left: 300px;
+    position: fixed;
+
+    width: 720px;
+    height: 720px; 
+    
+    border-radius: 100%;
+    z-index: -15;
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+
+.shelves {
+
+    width: 1150px;
+    height: 200px;
+    left: 0px;
+    top: 200px;
+    position: relative;
+    
+    border-radius: 50%;
+    background-color: #FFD1DC;
+    border-bottom: solid #F1ABB9 12px;
+
+    z-index: 15;
+    
+}
+
+.shelves-2 {
+
+    position: relative;
+    top: 300px;
+    z-index: 15;
+}
+
+.container {
+
+    width: 300px;
+    height: 300px;
+
+    display: inline-flex;
+    position: relative;
+
+    margin-left: 60px;
+    margin-top: -180px;
+    border-radius: 50%;
+   
+} 
+
+.container .image {
+
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.overlay {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background-color: pink;
+    border-radius: 100%;
+}
+
+.container .overlay:hover {
+
+    opacity: 100%;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+ .shelves:hover {
+        
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     transition: ease-in-out 1s;
+}}
+
+ @media only screen and (min-width: 1200px) {
+ 
+ .headings {
+  
+          font-size: 20px;
+}    
+    
+ .hamburger-menu:hover {
+      
+         border-width: 20px;
+         border-radius: 100%;
+        
+         background-color: #F1ABB9;
+         box-shadow: 0 0 30px 30px #ffffff;
+      
+}
+    
+ .nav-link {
+          
+          position: relative;
+          top: 28px;
+          left: -300px;
+          font-size: 22px;
+          display: inline-flex;
+}
+    
+ .nav-bar {
+         z-index: 100;
+         height: 100px;
+}
+    
+ .nav-headings {
+      
+          font-size: 14px;
+          font-weight: 500;
+          
+          letter-spacing: 1.5px;
+          color: white;
+          position: absolute; 
+          margin-top: 32px;
+          margin-left: 70px;
+}
+    
+ .social-media-container {
+      
+         width: 620px;
+         height: 95px;
+         position: absolute;
+         right: 50px;
+         top: 0;
+         right: 0px;
+}
+    
+ .instagram-container {
+      
+         width: 90px;
+         height: 60px;
+         left: 10px;
+         top: -15px;
+         position: relative; 
+         float: right; 
+}
+    
+ .instagram-container img {
+         
+         position: relative;
+         top: 6px;
+  
+         width: 56px; height: 56px;
+}
+    
+ .facebook-container {
+      
+         width: 60px;
+         height: 60px;
+          
+         position: relative;  
+         top: -1px; 
+         left: 20px;
+         float: right;
+}
+    
+ .facebook-container img {
+      
+         position: relative;
+         left: 0px; 
+         top: -8px; 
+  
+         width: 57px; height: 57px;
+}
+    
+ .phone-container {
+      
+         position: relataive;
+         left: -5px ;
+         top: 2px;
+      
+         width: 190px;
+         height: 85px;  
+}
+    
+ .phone-container img {
+      
+         position: absolute;
+         left: 0px;
+         top: 2px;
+  
+         width: 50px; height: 50px;
+}
+
+ .phone-container h1 {
+  
+      position: absolute;
+      top: 10px;
+      left: -15px;
+}
+    
+ .email-container {
+      
+         position: relative;
+         left: 0px ;
+         width: 240px;
+         top: 0px;
+         height: 85px;
+         
+         float: left;
+}
+    
+ .email-container img {
+  
+    position: absolute;
+    left: 0px;
+    top: 22px;
+     
+    width: 50px; height: 50px;
+}
+
+ .email-container h1 {
+  
+      position: absolute;
+      top: 6px;
+      left: -8px;
+}
+    
+ .hamburger-menu {
+      
+         position: fixed;
+         top: 10px;
+         left: 10px;
+      
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         
+         width: 40px;
+         height: 40px;
+         cursor: pointer;
+         
+         padding: 10px;
+         background-color: #F1ABB9;
+         box-shadow: 0 0 20px white;
+         border-radius: 50%;     
+}
+ 
+/*---------------------------------- Logo Section ------------------------------------*/
+
+ #logo-backdrop img {
+          
+      width: 800px;
+      height: 800px;
+      
+      top: 50px;
+      left: 250PX;
+      position: fixed;
+      opacity: 30%;
+}
+
+/*---------------------------------- Cake Shelves ------------------------------------*/
+
+ .shelves {
+
+   width: 1200px;
+   height: 300px;
+   left: -50px;
+   top: 200px;
+   position: absolute;
+   
+   border-radius: 50%;
+   background-color: #f1abb998;
+   border-bottom: solid #F1ABB9 12px;
+
+   z-index: 1;
+}
+
+ .shelves-2 {
+
+   position: relative;
+   top: 800px;
+}
+
+ .container {
+
+   width: 350px;
+   height: 350px;
+
+   position: relative;
+
+   margin-left: 33px;
+   margin-top: -140px;
+   border-radius: 50%;
+} 
+
+ .container .image {
+
+   width: 350px;
+   height: 350px;
+   position: relative;
+}
+
+ .overlay {
+
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 350px;
+   width: 350px;
+   opacity: 0;
+   transition: 1s ease-in-out;
+   background-color: pink;
+   border-radius: 100%;
+}
+
+ .container .overlay:hover {
+
+   opacity: 100%;
+   width: 350px;
+   height: 350px;
+   box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+.shelves:hover {
+       
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: ease-in-out 1s;
+}}
+
+ @media only screen and (min-width: 1320px) { 
+
+     .headings {
+
+        font-size: 20px;
+    }    
+    
+     .hamburger-menu:hover {
+    
+       border-width: 20px;
+       border-radius: 100%;
+      
+       background-color: #F1ABB9;
+       box-shadow: 0 0 30px 30px #ffffff;
+    
+    }
+    
+     .nav-link {
+        
+        position: relative;
+        top: 30px;
+        left: -300px;
+        font-size: 22px;
+        
+    }
+    
+     .nav-bar {
+       z-index: 100;
+    }
+    
+     .nav-headings {
+    
+        font-size: 14px;
+        font-weight: 500;
+        
+        letter-spacing: 1.5px;
+        color: white;
+        position: absolute; 
+        margin-top: 35px;
+        margin-left: 70px;
+    }
+    
+     .social-media-container {
+    
+       width: 620px;
+       height: 95px;
+       position: absolute;
+       right: 50px;
+       top: 0;
+     
+    }
+    
+     .instagram-container {
+    
+       width: 90px;
+       height: 60px;
+       left: 10px;
+       top: -15px;
+       position: relative; 
+       float: right; 
+    }
+    
+     .instagram-container img {
+       
+       position: relative;
+       top: 11px;
+
+       width: 55px; height: 55px;
+    }
+    
+     .facebook-container {
+    
+       width: 60px;
+       height: 60px;
+        
+       position: relative;  
+       top: -1px; 
+       left: 20px;
+       float: right;
+    }
+    
+     .facebook-container img {
+    
+       position: relative;
+       left: 0px; 
+       top: -3px; 
+
+       width: 57px; height: 57px;
+    }
+    
+     .phone-container {
+    
+       position: relataive;
+       left: 40px ;
+      
+    
+       width: 200px;
+       height: 85px;  
+
+       
+    }
+    
+     .phone-container img {
+    
+       position: relative;
+       left: 15px;
+       top: 0px;
+
+       width: 50px; height: 50px;
+    }
+    
+     .email-container {
+    
+       position: relative;
+       left: 0px ;
+       width: 250px;
+       top: 0px;
+       height: 85px;
+       
+       float: left;
+      
+    }
+    
+     .email-container img {
+    
+       position: relative;
+       left: -85px;
+       top: 20px;
+
+       width: 50px; height: 50px;
+    }
+    
+     .hamburger-menu {
+    
+       position: fixed;
+       top: 10px;
+       left: 10px;
+    
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+       
+       padding: 10px;
+       background-color: #F1ABB9;
+       box-shadow: 0 0 20px white;
+       border-radius: 50%;
+           
+    }
+    
+    /*---------------------------------- Logo Section ------------------------------------*/
+    
+     .logo-container img {
+
+        top: 30px;
+        left: 300px;
+        position: fixed;
+    
+        width: 720px;
+        height: 720px; 
+        
+        border-radius: 100%;
+        opacity: 20%;
+    }}
+    
+    /*---------------------------------- Cakes Section------------------------------------*/ 
+  
+ @media only screen and (min-width: 1920px) {
+
+/*---------------------------------- Navigation Section------------------------------------*/
+
+ .headings {
+
+    font-size: 20px;
+}    
+
+ .hamburger-menu:hover {
+
+   border-width: 20px;
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #ffffff;
+}
+
+ .nav-link {
+    
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+    left: -300px;
+}
+
+ .nav-bar {
+   z-index: 100;
+}
+
+ .nav-headings {
+
+    font-size: 16px;
+    font-weight: 500;
+    
+    letter-spacing: 1.5px;
+    color: white;
+    position: absolute;  
+}
+
+ .social-media-container {
+
+   width: 720px;
+   height: 95px;
+   position: absolute;
+   right: 50px;
+   top: 0;
+}
+
+ .instagram-container {
+
+   width: 90px;
+   height: 60px;
+   left: 0px;
+   top: -25px;
+   position: relative; 
+   float: right; 
+}
+
+ .instagram-container img {
+   
+   position: relative;
+   top: 21px;
+}
+
+ .facebook-container {
+
+   width: 60px;
+   height: 60px;
+    
+   position: relative;  
+   top: -11px; 
+   left: 0px;
+   float: right;
+}
+
+ .facebook-container img {
+
+   position: relative;
+   left: 5px; 
+   top: 7px;
+}
+
+ .phone-container {
+
+   position: relataive;
+   left: -100px ;
+   top: 10px;
+
+   width: 210px;
+   height: 85px;
+}
+
+ .phone-container h1 {
+
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+
+ .phone-container img {
+
+   position: absolute;
+   left: 0px;
+   top: 5px; 
+}
+
+ .email-container {
+
+   position: relative;
+   left: 10px ;
+   width: 300px;
+   top: 2px;
+   height: 85px;
+   
+   float: left;
+}
+
+ .email-container h1 {
+
+    position: absolute;
+    top: 2px;
+    left: -7px;
+}
+
+ .email-container img {
+
+   position: absolute;
+   left: 0px;
+   top: 23px;
+}
+
+ .hamburger-menu {
+
+   position: fixed;
+   top: 10px;
+   left: 10px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   
+   padding: 10px;
+   background-color: #F1ABB9;
+   box-shadow: 0 0 20px white;
+   border-radius: 50%;     
+}
+
+/*---------------------------------- Logo Section ------------------------------------*/
+
+  #logo-backdrop img {
+         
+    width: 800px;
+    height: 800px;
+    
+    top: 70px;
+    left: 550px;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 20%;
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+
+ .shelves {
+
+    width: 1500px;
+    height: 350px;
+    left: 120px;
+    top: 100px;
+    position: absolute;
+    
+    border-radius: 50%;
+    background-color: #f1abb998;
+    border-bottom: solid #F1ABB9 12px;
+
+    z-index: 1;
+}
+
+ .shelves-2 {
+
+    position: relative;
+    top: 700px;
+}
+
+ .container {
+
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    margin-left: 73px;
+    margin-top: -150px;
+    border-radius: 50%;
+} 
+
+ .container .image {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+ .overlay {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background-color: pink;
+    border-radius: 100%;
+}
+
+ .container .overlay:hover {
+
+    opacity: 100%;
+    width: 400px;
+    height: 400px;
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+ .shelves:hover {
+        
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     transition: ease-in-out 1s;
+}}
+
+ @media only screen and (min-width: 2715px) {
+
+    /*---------------------------------- Navigation Section------------------------------------*/
+
+ .headings {
+
+    font-size: 20px;
+}    
+
+ .hamburger-menu:hover {
+
+   border-width: 20px;
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #ffffff;
+}
+
+ .nav-link {
+    
+    position: relative;
+    top: 0px;
+}
+
+ .nav-item {
+
+    position: absolute;
+    left: -150px;
+}
+
+ .nav-bar {
+
+   z-index: 100;
+   width: 100%;
+}
+
+ .social-media-container {
+
+    position: absolute;
+   
+    right: 50px;
+}
+
+ .instagram-container {
+
+    position: relative;
+    top: 0px;
+}
+
+ .instagram-container img{
+
+    position: relative;
+    top: 0px;
+}
+
+ .facebook-container {
+
+    position: relative;
+    top: 0px;
+    left: 25px;
+}
+
+ .facebook-container img{
+
+    position: relative;
+    top: 0px;
+}
+
+ .phone-container {
+
+    position: relative;
+    top: 0px;
+    left: 50px;
+}
+
+ .phone-container img{
+
+    position: relative;
+    top: 7px;
+}
+
+ .email-container {
+
+    position: relative;
+    top: 0px;
+    left: 75px;
+}
+
+ .email-container img{
+
+    position: relative;
+    top: 20px;
+}
+
+ /*---------------------------------- Logo Section ------------------------------------*/
+
+ .logo-section img {
+
+    width: 400px;
+    height: 400px;
+    
+    top: -270px;
+    left: 50px;
+    position: absolute;
+   
+    opacity: 100%;
+    margin:  auto;
+}
+
+ .logo-section img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line {
+
+    position: absolute; 
+    width: 500px;
+    height: 200px; 
+    left: 400px;
+    top: 380px;
+    
+    background-color: #FFD1DC;
+    
+    opacity: 80%;
+    border-width: 12px;
+    border-color: #F1ABB9;
+    z-index: 9; 
+    margin: 0 auto;   
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+ 
+ #main-cake-container img {
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -50px;
+    top: 10px;
+}
+
+ #main-cake-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cake-info-container {
+
+    width: 400px;
+    height: 450px;
+  
+    border-radius: 50px;
+    background-color: #F1ABB9;
+    
+    position: absolute;
+    left: 510px;
+    top: -860px;
+    
+    margin: auto; 
+}
+
+ #cake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-2 {
+
+    position: absolute;
+    width: 950px;
+    height: 400px;
+
+    left: 170px;
+    top: 770px;
+
+    border-width: 12px;
+    background-color: #FFD1DC;
+  
+    opacity: 80%;
+    border-color: #F1ABB9;
+    z-index: 7;
+}
+
+/*---------------------------------- Cupcakes Section------------------------------------*/
+
+ #main-cupcake-container img {
+    
+     width: 500px;
+     height: 500px;
+    
+     position: absolute;
+     left: -180px;
+     top: 10px;
+}    
+
+ #main-cupcake-container img:hover {
+
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cupcake-info-container {
+
+     width: 500px;
+     height: 450px;
+
+     border-radius: 50px;
+     border-radius: 50px;
+     position: absolute;
+     background-color: #F1ABB9;
+
+     top: -1500px;
+     left: 60px;
+}
+
+ #cupcake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-3 {
+
+     position: absolute;
+     width: 1100px;
+     height: 400px;
+
+     left: 90px;
+     top: 1350px;
+
+     background-color: #FFD1DC;
+     border-width: 12px;  
+     opacity: 80%;
+   
+     border-color: #F1ABB9; 
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+ #devide-line:hover {
+   
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-2:hover {
+
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+}
+
+ #devide-line-3:hover {
+
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}}

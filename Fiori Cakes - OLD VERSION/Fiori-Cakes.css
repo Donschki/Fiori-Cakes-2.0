@@ -1,0 +1,2382 @@
+ * {
+
+     margin: 0;
+     padding: 0;
+}
+
+ html {
+
+     height: 100vh;
+}
+
+ body {
+
+     font-family: Times, Times New Roman, sans-serif;
+     font-style: italic;
+     background: linear-gradient(
+
+      rgba(243, 165, 225, 0.507),
+      rgba(236, 230, 235, 0.514),          
+      rgba(233, 154, 217, 0.432)
+     ), 
+
+     url('Background/Pink-Blotch-2.jpg') center no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+   
+     height: 280%;
+     width: 100%;
+     margin: 0;
+}
+
+ #headings {
+
+     font-size: 20px;
+     color: white;
+     text-align: center;
+     margin-top: 150px;
+}
+
+ #paragraphs {
+
+     font-size: 20px;
+     color: white;
+     text-align: center; 
+}
+
+/*-------------------------------------- Navigation Section ------------------------------------------------ */
+
+ .nav-headings {
+
+     font-size: 15px;
+     font-weight: 500;
+     text-transform: lowercase;
+     letter-spacing: 1px;
+     color: white;
+     position: absolute; 
+}
+
+ .nav-bar {
+
+     background-color: #F1ABB9;
+     width: 100%;
+     height: 100px;
+
+     left: 0;
+     top: -100px;
+
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     display: flex;
+  
+     transition: top 0.5s cubic-bezier(1,1,1,1);
+  
+     border-radius: 0 0 30% 30%;
+     box-shadow: 0 0 20px white;
+}
+
+ .change {
+
+     top: 0;
+}
+
+ .social-media-container {
+
+     width: 500px;
+     height: 90px;
+     position: absolute;
+     right: 250px; 
+}
+ 
+ .instagram-container {
+
+     width: 100px;
+     height: 85px;
+     left: 0px;
+    
+     position: relative; 
+     float: left;
+     
+     justify-content: center;
+ }
+
+ .instagram-container img {
+     
+     padding: 12px;
+     position: relative;
+}
+
+ .facebook-container {
+
+     width: 90px;
+     height: 85px;
+      
+     position: relative;  
+     float: left;
+}
+
+ .facebook-container img {
+
+     padding: 11px;
+     position: relative;
+     left: -2px; 
+}
+
+ .phone-container {
+
+     position: relataive;
+     left: 40px ;
+     width: 130px;
+     height: 85px;
+    
+     float: left;
+     justify-content: center;
+     display: flex;
+}
+
+ .phone-container img {
+
+     position: relative;
+     padding: 12px;
+     top: 10px;
+
+}
+
+ .email-container {
+
+     position: relative;
+     left: 0px ;
+     width: 63px;
+     height: 85px;
+    
+     float: left;
+     display: flex;
+     justify-content: center;
+}
+
+ .email-container img {
+
+     position: relative;
+}
+
+ .phone-container img {
+
+    position: relative;
+    top: 5px;    
+}
+
+ .hamburger-menu {
+
+     position: fixed;
+     top: 10px;
+     left: 10px;
+ 
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+     
+     padding: 10px;
+     background-color: #F1ABB9;
+     box-shadow: 0 0 20px white;
+     border-radius: 50%;        
+}
+
+ .hamburger-menu:hover {
+
+    box-shadow: 0px 0px 20px 20px #F1ABB9;
+    border-width: 20px;
+    border-radius: 100%;
+   
+    background-color: #F1ABB9;
+    box-shadow: 0 0 30px 30px #ffffff;
+}
+ 
+ .line {
+
+     width: 100%;
+     height: 4px;
+     border: rgb(255, 252, 252) solid 2px ;
+     
+     background-color: rgb(255, 255, 255);
+     border: hidden;
+     border-radius: 3px;
+     box-shadow: 0 0 1px 1px white;
+
+     transition: all 0.5s;
+}
+
+ .change .line-1 {
+
+     transform: rotate(-405deg) translate(-10px, 8px);
+}
+
+ .change .line-2 {
+
+     opacity: 0;
+}
+
+ .change .line-3 {
+
+     transform: rotate(405deg) translate(-10px, -8px);
+}
+
+ #list-items {
+    
+     font-size: 23px;
+     word-spacing: 60px;
+     text-transform: uppercase;
+     list-style: none;    
+}
+
+ .nav-link {
+
+     position: relative;
+     color: rgb(255, 255, 255);
+     text-decoration: none ;
+     top:30px;
+     left: -150px;
+
+     border-radius: 100%;
+     border-width: 10px;
+}
+
+ .nav-link:hover {
+
+     box-shadow: 0px 0px 20px 20px #FFD1DC;
+     border-width: 20px;
+     border-radius: 100%;
+    
+     background-color: #FFD1DC;
+     z-index: 3;
+     position: relative;
+     transition: ease-in-out 0.5s; 
+}
+
+/*-------------------------------------- Logo Section ----------------------------------------*/
+
+ .logo-section {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 800px;
+    z-index: -2;  
+}
+
+ #logo-backdrop {
+
+    
+     position: absolute;
+     z-index: -2;  
+}
+
+ .logo-container img {
+
+     width: 700px;
+     height: 700px;
+   
+     box-shadow:0 0  60px #d4af37b0;
+   
+     opacity: 60%;
+     border-radius: 100%;;
+}
+
+/* ---------------------------------- Cakes Section ------------------------------------------------*/
+
+ #gallery-cake-container {
+    
+     border-radius: 100%;
+} 
+
+ #cake-info-container {
+
+     width: 500px;
+     height: 500px;
+}
+
+ #gallery-cake-container a {
+
+     position: absolute;
+}
+
+ #gallery-cake-container img {
+   
+     width: 600px;
+     height: 600px;
+     
+     border-radius: 100%; 
+}
+
+/* ---------------------------------- Cake Auto Gallery -------------------------------------*/
+
+ #gallery-cake-container a:nth-of-type(1) {
+
+     animation-name: fader;
+     animation-delay: 3.5s;
+     animation-duration: 1s ;
+     z-index: 20;
+}
+
+ #gallery-cake-container a:nth-of-type(2) {
+
+     z-index: 10;
+}
+
+ #gallery-cake-container a:nth-of-type(n+3) {  
+
+     display: none;
+}
+
+ @keyframes fader {
+
+     from{opacity: 1.0;}
+     to {opacity: 0.0;}; 
+}
+
+/*---------------------------------- Cupcakes Section ------------------------------------*/
+
+ #gallery-cupcake-container{
+ 
+     border-radius: 100%;
+} 
+
+ #cupcake-info-container {
+
+     width: 500px;
+     height: 500px;
+}
+ 
+ #gallery-cupcake-container a {
+
+     position: absolute;
+}
+ 
+ #gallery-cupcake-container img {
+
+     width: 600px;
+     height: 600px;
+     
+     border-radius: 100%;
+}
+
+/* ---------------------------------- Cupcake Auto Gallery ------------------------*/
+
+ #gallery-cupcake-container a:nth-of-type(1) {
+
+     animation-name: fader;
+     animation-delay: 4s;
+     animation-duration: 1s ;
+     z-index: 20;
+}
+ 
+ #gallery-cupcake-container a:nth-of-type(2) {
+
+     z-index: 10;
+}
+ 
+ #gallery-cupcake-container a:nth-of-type(n+3) {
+
+     display: none;
+}
+ 
+ @keyframes fader {
+     
+     from{opacity: 1.0;}
+     to {opacity: 0.0;}; 
+}
+
+/* ---------------------------------- About Section ------------------------*/
+
+ #about-gallery-container{
+ 
+    border-radius: 100%;
+} 
+
+ #about-info-container {
+
+    width: 500px;
+    height: 500px;
+}
+
+ #about-gallery-container a {
+
+    position: absolute;
+}
+
+ #about-gallery-container img {
+
+    width: 600px;
+    height: 600px;
+    
+    border-radius: 100%;
+}
+
+/* ---------------------------------- About Auto Gallery ------------------------*/
+
+ #about-gallery-container a:nth-of-type(1) {
+
+    animation-name: fader;
+    animation-delay: 2s;
+    animation-duration: 2s ;
+    z-index: 30;
+}
+
+ #about-gallery-container a:nth-of-type(2) {
+
+    z-index: 10;
+}
+
+ #about-gallery-container a:nth-of-type(n+3) {
+
+    display: none;
+}
+
+ @keyframes fader {
+    
+    from{opacity: 1.0;}
+    to {opacity: 0.0;};
+}
+ 
+/* ------------------------------------- Divide Lines -------------------------------------*/
+
+ #devide-line {
+
+     width: 100%;
+     position: absolute;
+     top: 800px;
+     left: 300px;
+    
+     border-bottom:  solid #f1abb998 5px;
+     border-radius: 100%;
+}
+
+ #devide-line-2 {
+
+     width: 100%;
+    
+     position: absolute;
+ 
+     top: -150px;
+     left: 270px;
+ 
+     border-bottom:  solid #f1abb998 5px;
+     border-radius: 100%;
+}
+
+ #devide-line-3 {
+
+     width: 100%;
+     
+     border-bottom:  solid #f1abb998 5px;
+     border-radius: 100%;
+
+     position: absolute;
+ 
+     top: 2400px;
+     left: 270px;
+}
+
+ #devide-line-4  {
+
+    width: 100%;
+    
+    border-bottom:  solid #f1abb998 5px;
+    border-radius: 100%;
+
+    position: absolute;
+
+    top: 2400px;
+    left: 270px;
+}
+
+/* --------------------------------------- Mobile Platforms -------------------------------------*/
+
+ @media only screen and (min-width: 0px) {
+
+ .headings {
+
+        font-size: 20px;
+}    
+
+ .hamburger-menu:hover {
+    
+       border-width: 20px;
+       border-radius: 100%;
+      
+       background-color: #F1ABB9;
+       box-shadow: 0 0 30px 30px #ffffff;
+}
+
+ .nav-link {
+        
+        position: relative;
+        top: 0px;
+}
+
+ .nav-item {
+    
+        position: absolute;
+        left: -150px;
+}
+
+ .nav-bar {
+       z-index: 100;
+       width: 100%;
+
+}
+
+ .social-media-container {
+    
+        position: absolute;
+        right: 50px;
+}
+
+ .instagram-container {
+    
+        position: relative;
+        top: -10px;
+        left: 30px;
+        float: right;
+}
+
+ .instagram-container img{
+    
+        position: relative;
+        top: 0px;
+}
+
+ .facebook-container {
+    
+        position: relative;
+        top: -10px;
+        left: 60px;
+        float: right;
+}
+
+ .facebook-container img{
+    
+        position: relative;
+        top: 0px;
+}
+
+ .phone-container {
+    
+        position: relative;
+        top: 0px;
+        left: 150px;
+}
+
+ .phone-container img{
+    
+        position: relative;
+        top: 7px;
+}
+
+ .email-container {
+    
+        position: relative;
+        top: 0px;
+        left: 150px;
+    
+}
+
+ .email-container img{
+    
+        position: relative;
+        top: 20px;
+}
+
+ /*---------------------------------- Logo Section ------------------------------------*/
+
+ .logo-section img {
+    
+        width: 500px;
+        height: 500px;
+        
+        top: -400px;
+        left: 40px;
+        position: absolute;
+       
+        opacity: 100%;
+        border-radius: 50%;
+}
+
+ .logo-section img:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     
+}
+
+ #devide-line {
+    
+        position: absolute; 
+        width: 600px;
+        height: 200px; 
+        left: 180px;
+        top: 600px;
+        
+        background-color: #FFD1DC;
+        
+        opacity: 80%;
+        border-width: 12px;
+        border-color: #F1ABB9;
+        z-index: 13; 
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+
+ #gallery-cake-container  {
+    
+        position: absolute;
+        width: 400px;
+        height: 600px;
+        left: -15px;
+        top: -800px;
+        z-index: 11;
+}
+
+ #cake-info-container {
+    
+        width: 395px;
+        height: 450px;
+      
+        border-radius: 50px;
+        background-color: #F1ABB9;
+        
+        position: absolute;
+        left: 500px;
+        top: -900px;  
+        z-index: 10;
+}
+
+ #devide-line-2 {
+    
+        position: absolute;
+        width: 900px;
+        height: 200px;
+    
+        left: 30px;
+        top: 1620px;
+    
+        border-width: 12px;
+        background-color: #FFD1DC;
+      
+        opacity: 80%;
+        border-color: #F1ABB9;
+        z-index: 9;    
+}
+
+ #gallery-cake-container:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cake-info-container:hover {
+    
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+/*---------------------------------- Cupcakes Section------------------------------------*/
+
+ #gallery-cupcake-container{
+        
+         width: 500px;
+         height: 600px;
+        
+         position: relative;
+         left: 405px;
+         top: 900px;
+}    
+
+ #cupcake-info-container {
+    
+         width: 400px;
+         height: 600px;
+    
+         border-radius: 50px;
+         border-radius: 50px;
+         position: absolute;
+         background-color: #F1ABB9;
+    
+         top: -500px;
+         left: -10px;
+         z-index: 7;
+}
+ 
+ #devide-line-3 {
+    
+        position: absolute;
+        width: 900px;
+        height: 200px;
+   
+        left: 30px;
+        top: 1990px;
+   
+        background-color: #FFD1DC;
+        border-width: 12px;  
+        opacity: 80%;
+      
+        border-color: #F1ABB9; 
+        z-index: 8;
+}
+
+ #gallery-cupcake-container:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cupcake-info-container:hover {
+    
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+/*---------------------------------- About Section------------------------------------*/
+
+ #devide-line-4 {
+    
+        position: absolute;
+        width: 900px;
+        height: 200px;
+   
+        left: 25px;
+        top: 1050px;
+   
+        background-color: #FFD1DC;
+        border-width: 12px;  
+        opacity: 80%;
+      
+        border-color: #F1ABB9; 
+        border-radius:50% ;
+        z-index: 8;
+}
+
+ #about-gallery-container{ 
+
+    position: relative;
+    top: 500px;
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+ #devide-line:hover {
+       
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-2:hover {
+    
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+}
+
+ #devide-line-3:hover {
+    
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-4:hover {
+    
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}}
+
+ @media only screen and (min-width: 401px) {
+
+}
+ @media only screen and (min-width: 801px) {
+
+/*---------------------------------- Navigation Section------------------------------------*/
+ 
+.headings {
+
+    font-size: 20px;
+}    
+
+.hamburger-menu:hover {
+
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #ffffff;
+
+}
+
+.nav-link {
+    
+    position: relative;
+    top: 0px;
+    font-size: 25px;
+}
+    
+.nav-bar {
+   z-index: 100;
+}
+
+.social-media-container {
+
+   width: 550px;
+   height: 95px;
+   position: absolute;
+   right: 50px;
+   top: 0;
+}
+
+.instagram-container {
+
+   width: 90px;
+   height: 100px;
+   left: 0px;
+   top: -15px;
+   position: relative; 
+   float: right; 
+}
+
+.instagram-container img {
+   
+   padding: 20px;
+   position: relative;
+}
+
+.facebook-container {
+
+   width: 60px;
+   height: 100px;
+    
+   position: relative;  
+   top: -15px; 
+   left: 0px;
+   float: right;
+}
+
+.facebook-container img {
+
+   padding: 20px;
+   position: relative;
+   left: -2px; 
+}
+
+.phone-container {
+
+   position: relataive;
+   left: 0px ;
+   width: 140px;
+   height: 85px;
+  
+}
+
+.phone-container img {
+
+   position: relative;
+   padding-top: 20px;
+  
+}
+
+.email-container {
+
+   position: relative;
+   left: 30px ;
+   width: 200px;
+   height: 85px;
+  
+   float: left;
+ 
+
+}
+
+.email-container img {
+
+   position: relative;
+   padding-top: 7px;
+}
+
+.phone-container img {
+
+  position: relative;
+  top: 5px;  
+ 
+}
+
+.hamburger-menu {
+
+   position: fixed;
+   top: 10px;
+   left: 10px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   
+   padding: 10px;
+   background-color: #F1ABB9;
+   box-shadow: 0 0 20px white;
+   border-radius: 50%;
+       
+}
+
+.hamburger-menu:hover {
+
+  box-shadow: 0px 0px 20px 20px #ffffff;
+  border-width: 20px;
+  border-radius: 100%;
+ 
+  background-color: #F1ABB9;
+  box-shadow: 0 0 30px 30px #ffffff;
+}
+
+/*---------------------------------- Logo Section ------------------------------------*/
+
+ .logo-section img {
+
+    width: 400px;
+    height: 400px;
+    
+    top: -280px;
+    left: 48px;
+    position: absolute;
+    border-radius: 50%;
+   
+    opacity: 100%;
+}
+
+ .logo-section img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+ 
+}
+
+ #devide-line {
+
+    position: absolute; 
+    width: 500px;
+    height: 200px; 
+    left: 420px;
+    top: 500px;
+    
+    background-color: #FFD1DC;
+    
+    opacity: 80%;
+    border-width: 12px;
+    border-color: #F1ABB9;
+    z-index: 9; 
+  
+   
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+
+ #gallery-cake-container {
+  
+    position: absolute;
+    left: 0px;
+    top: -240px;
+
+    width: 450px;
+    height: 450px;
+}  
+
+ #gallery-cake-container img {
+
+    position: absolute;
+    width: 450px;
+    height: 450px;
+}
+
+ #gallery-cake-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cake-info-container {
+
+    width: 350px;
+    height: 430px;
+  
+    border-radius: 50px;
+    background-color: #F1ABB9;
+    
+    position: absolute;
+    left: 470px;
+    top: -220px;
+}
+
+ #cake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-2 {
+
+    position: absolute;
+    width: 850px;
+    height: 300px;
+
+    left: 250px;
+    top: 900px;
+
+    border-width: 12px;
+    background-color: #FFD1DC;
+  
+    opacity: 80%;
+    border-color: #F1ABB9;
+    z-index: 7;
+}
+
+ /*---------------------------------- Cupcakes Section------------------------------------*/
+
+ #gallery-cupcake-container {
+
+    position: absolute;
+    left: 540px;
+    top: -250px;
+
+    width: 450px;
+    height: 450px;
+ }
+
+#gallery-cupcake-container img {
+    
+    width: 450px;
+    height: 450px;
+    left: 0px;
+    
+    position: absolute; 
+}    
+
+#gallery-cupcake-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+#cupcake-info-container {
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #F1ABB9;
+
+    top: -240px;
+    left: 70px;
+   
+   
+}
+
+#cupcake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+#devide-line-3 {
+
+    position: absolute;
+    width: 1100px;
+    height: 300px;
+
+    left: 120px;
+    top: 1420px;
+
+    background-color: #FFD1DC;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+
+    z-index: 6;
+   
+}
+
+#devide-line-4 {
+
+    position: absolute;
+    width: 1300px;
+    height: 300px;
+
+    left: 10px;
+    top: 2080px;
+
+    background-color: #FFD1DC;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+
+    z-index: 5;
+   
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+#devide-line:hover {
+   
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+#devide-line-2:hover {
+
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+}
+
+#devide-line-3:hover {
+
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}}
+
+/* --------------------------------------- Desktop Platforms -------------------------------------*/
+
+ @media only screen and (min-width: 1200px) { 
+
+ .hamburger-menu:hover {
+    
+        border-width: 20px;
+        border-radius: 100%;
+       
+        background-color: #F1ABB9;
+        box-shadow: 0 0 30px 30px #ffffff;
+        transition: 0.6s ease-in-out;
+     
+}
+
+ .nav-link {
+         
+         position: relative;
+         top: 0px;
+         left: -300px;
+         font-size: 22px;
+         
+}
+
+ .nav-bar {
+        z-index: 100;
+}
+
+ .nav-headings {
+     
+         font-size: 14px;
+         font-weight: 500;
+         text-transform: lowercase;
+         
+         letter-spacing: 1.5px;
+         color: white;
+         position: absolute; 
+         margin-top: 38px;
+         margin-left: 70px;
+}
+
+ .social-media-container {
+     
+        width: 640px;
+        height: 95px;
+        position: absolute;
+        right: 50px;
+        top: 0;
+       
+}
+
+ .instagram-container {
+     
+        width: 90px;
+        height: 60px;
+        left: 10px;
+        top: -15px;
+        position: relative; 
+        float: right; 
+}
+
+ .instagram-container img {
+        
+        position: relative;
+        top: 11px;
+ 
+        width: 55px; height: 55px;
+}
+
+ .facebook-container {
+     
+        width: 60px;
+        height: 60px;
+         
+        position: relative;  
+        top: -1px; 
+        left: 20px;
+        float: right;
+}
+
+ .facebook-container img {
+     
+        position: relative;
+        left: 0px; 
+        top: -3px; 
+ 
+        width: 57px; height: 57px;
+}
+
+ .phone-container {
+     
+        position: relataive;
+        left: 40px ;
+        top: 2px;
+     
+        width: 200px;
+        height: 85px; 
+}
+
+ .phone-container img {
+     
+        position: relative;
+        left: -55px;
+        top: 0px;
+ 
+        width: 50px; height: 50px;
+}
+
+ .email-container {
+     
+        position: relative;
+        left: 60px ;
+        width: 250px;
+        top: 2px;
+        height: 85px;
+        
+        float: left; 
+}
+
+ .email-container h1 {
+ 
+         position: absolute;
+         top: -5px;
+         left: -10px;
+ 
+        
+}
+
+ .email-container img {
+     
+        position: relative;
+        left: -100px;
+        top: 11px;
+ 
+        width: 50px; height: 50px;
+       
+}
+
+ .hamburger-menu {
+     
+        position: fixed;
+        top: 10px;
+        left: 10px;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        
+        padding: 10px;
+        background-color: #F1ABB9;
+        box-shadow: 0 0 20px white;
+        border-radius: 50%;
+}           
+
+ /*---------------------------------- Logo Section ------------------------------------*/
+ 
+ .logo-section img {
+     
+     width: 400px;
+     height: 400px;
+     
+     top: -270px;
+     left: 50px;
+     position: absolute;
+
+     opacity: 100%;
+     margin:  auto;
+}
+ 
+ .logo-section img:hover {
+     
+         background-color: rgba(255, 255, 255, 0.356);
+         border-color: rgba(255, 255, 255, 0.87);
+         box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+      
+}
+ 
+ /*---------------------------------- Cakes Section------------------------------------*/
+  
+ #gallery-cake-container img {
+     
+         position: absolute;
+         width: 550px;
+         height: 550px;
+         left: -90px;
+         top: -90px;
+}
+ 
+ #gallery-cake-container img:hover {
+     
+         background-color: rgba(255, 255, 255, 0.356);
+         border-color: rgba(255, 255, 255, 0.87);
+         box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+         transition: 0.8s ease-in-out;
+}
+ 
+  #cake-info-container {
+     
+         width: 400px;
+         height: 500px;
+       
+         border-radius: 50px;
+         background-color: #F1ABB9;
+         
+         position: absolute;
+         left: 470px;
+         top: -300px;   
+ }
+ 
+  #cake-info-container:hover {
+     
+         border-color: rgba(255, 255, 255, 0.87);
+         box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+         transition: 0.8s ease-in-out;
+ }
+ 
+ /*---------------------------------- Cupcakes Section------------------------------------*/
+ 
+  #gallery-cupcake-container {
+ 
+      box-shadow: none;
+ }
+ 
+  #gallery-cupcake-container img {
+         
+         width: 550px;
+         height: 550px;
+         
+         position: absolute;
+         left: 20px;
+         top: -60px;
+ }    
+ 
+  #gallery-cupcake-container img:hover {
+     
+         background-color: rgba(255, 255, 255, 0.356);
+         border-color: rgba(255, 255, 255, 0.87);
+         box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+         transition: 0.8s ease-in-out;
+ }
+ 
+  #cupcake-info-container {
+     
+         width: 500px;
+         height: 500px;
+     
+         border-radius: 50px;
+         border-radius: 50px;
+         position: absolute;
+         background-color: #F1ABB9;
+     
+         top: -290px;
+         left: 50px;
+        
+        
+ }
+ 
+  #cupcake-info-container:hover {
+     
+         border-color: rgba(255, 255, 255, 0.87);
+         box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+         transition: 0.8s ease-in-out;
+ }
+
+ /*---------------------------------- About Section------------------------------------*/
+
+ #about-gallery-container img {
+     
+    position: absolute;
+    width: 550px;
+    height: 550px;
+
+    left: 20px;
+    top: -335px;
+    border-radius: 50%;
+}
+
+ #about-info-container {
+
+    width: 600px;
+    height: 500px;
+  
+    border-radius: 50px;
+    background-color: #F1ABB9;
+    
+    position: absolute;
+    left: 580px;
+    top: -310px;   
+}
+
+ #about-gallery-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ #about-info-container-1:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ #about-info-container-2:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ /*--------------------------------------- Shelfves --------------------------------------*/
+ 
+ #devide-line {
+ 
+     position: absolute; 
+     width: 500px;
+     height: 200px; 
+     left: 400px;
+     top: 460px;
+     
+     background-color: #f1abb998;
+     
+     opacity: 80%;
+     border-width: 12px;
+     border-color: #F1ABB9;
+     z-index: 9; 
+}
+
+ #devide-line-2 {
+ 
+     position: absolute;
+     width: 900px;
+     height: 300px;
+ 
+     left: 210px;
+     top: 930px;
+ 
+     border-width: 12px;
+     background-color: #f1abb998;
+   
+     opacity: 80%;
+     border-color: #F1ABB9;
+     z-index: 7;
+}
+
+ #devide-line-3 {
+ 
+     position: absolute;
+     width: 1100px;
+     height: 300px;
+ 
+     left: 90px;
+     top: 1500px;
+ 
+     background-color: #f1abb998;
+     border-width: 12px;  
+     opacity: 80%;
+    
+     border-color: #F1ABB9;
+}
+
+ #devide-line-4 {
+ 
+     position: absolute;
+     width: 1200px;
+     height: 300px;
+ 
+     left: 40px;
+     top: 2100px;
+     
+ 
+     background-color: #f1abb998;
+     border-width: 12px;  
+     opacity: 80%;
+    
+     border-color: #F1ABB9; 
+}
+
+ #devide-line-5 {
+ 
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+
+    left: 40px;
+    top: 2400px;
+   
+    background-color: #f1abb998;
+    border-width: 12px;  
+    opacity: 80%;
+    border-radius: 50%;
+   
+    border-color: #F1ABB9;
+}
+
+ /*---------------------------------- Hover for lines ------------------------------------*/
+ 
+  #devide-line:hover {
+        
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     transition: 0.6s ease-in-out;
+ }
+ 
+  #devide-line-2:hover {
+     
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+     transition: 0.6s ease-in-out;
+ }
+ 
+  #devide-line-3:hover {
+     
+     background-color: rgba(255, 255, 255, 0.356);
+     border-color: rgba(255, 255, 255, 0.87);
+     box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     transition: 0.6s ease-in-out;
+ }
+
+ #devide-line-4:hover {
+ 
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.6s ease-in-out;
+}}
+
+ @media only screen and (min-width: 1360px) { 
+
+     .headings {
+
+        font-size: 20px;
+    }    
+    
+     .hamburger-menu:hover {
+    
+       border-width: 20px;
+       border-radius: 100%;
+      
+       background-color: #F1ABB9;
+       box-shadow: 0 0 30px 30px #ffffff;
+    
+    }
+    
+     .nav-link {
+        
+        position: relative;
+        top: 0px;
+        left: -300px;
+        font-size: 22px;
+        
+    }
+    
+     .nav-bar {
+       z-index: 100;
+    }
+    
+     .nav-headings {
+    
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: lowercase;
+        
+        letter-spacing: 1.5px;
+        color: white;
+        position: absolute; 
+        margin-top: 38px;
+        margin-left: 70px;
+    }
+    
+     .social-media-container {
+    
+       width: 640px;
+       height: 95px;
+       position: absolute;
+       right: 50px;
+       top: 0;
+      
+    }
+    
+     .instagram-container {
+    
+       width: 90px;
+       height: 60px;
+       left: 10px;
+       top: -15px;
+       position: relative; 
+       float: right; 
+    }
+    
+     .instagram-container img {
+       
+       position: relative;
+       top: 11px;
+
+       width: 55px; height: 55px;
+    }
+    
+     .facebook-container {
+    
+       width: 60px;
+       height: 60px;
+        
+       position: relative;  
+       top: -1px; 
+       left: 20px;
+       float: right;
+    }
+    
+     .facebook-container img {
+    
+       position: relative;
+       left: 0px; 
+       top: -3px; 
+
+       width: 57px; height: 57px;
+    }
+    
+     .phone-container {
+    
+       position: relataive;
+       left: 40px ;
+       top: 2px;
+    
+       width: 200px;
+       height: 85px; 
+    }
+    
+     .phone-container img {
+    
+       position: relative;
+       left: -55px;
+       top: 0px;
+
+       width: 50px; height: 50px;
+    }
+    
+     .email-container {
+    
+       position: relative;
+       left: 60px ;
+       width: 250px;
+       top: 2px;
+       height: 85px;
+       
+       float: left; 
+    }
+
+    .email-container h1 {
+
+        position: absolute;
+        top: -5px;
+        left: -10px;
+
+       
+    }
+    
+     .email-container img {
+    
+       position: relative;
+       left: -100px;
+       top: 11px;
+
+       width: 50px; height: 50px;
+      
+    }
+    
+     .hamburger-menu {
+    
+       position: fixed;
+       top: 10px;
+       left: 10px;
+    
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+       
+       padding: 10px;
+       background-color: #F1ABB9;
+       box-shadow: 0 0 20px white;
+       border-radius: 50%;
+           
+    }
+/*---------------------------------- Logo Section ------------------------------------*/
+
+ .logo-section img {
+    
+        width: 400px;
+        height: 400px;
+        
+        top: -270px;
+        left: 50px;
+        position: absolute;
+       
+        opacity: 100%;
+        margin:  auto;
+}
+
+ .logo-section img:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+     
+}
+
+/*---------------------------------- Cakes Section------------------------------------*/
+ 
+ #gallery-cake-container img {
+    
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        left: -90px;
+        top: -90px;
+}
+
+ #gallery-cake-container img:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cake-info-container {
+    
+        width: 400px;
+        height: 500px;
+      
+        border-radius: 50px;
+        background-color: #F1ABB9;
+        
+        position: absolute;
+        left: 470px;
+        top: -300px;   
+}
+
+ #cake-info-container:hover {
+    
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+/*---------------------------------- Cupcakes Section------------------------------------*/
+
+ #gallery-cupcake-container {
+
+     box-shadow: none;
+}
+
+ #gallery-cupcake-container img {
+        
+        width: 550px;
+        height: 550px;
+        
+        position: absolute;
+        left: 40px;
+        top: -60px;
+}    
+
+ #gallery-cupcake-container img:hover {
+    
+        background-color: rgba(255, 255, 255, 0.356);
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #cupcake-info-container {
+    
+        width: 500px;
+        height: 500px;
+    
+        border-radius: 50px;
+        border-radius: 50px;
+        position: absolute;
+        background-color: #F1ABB9;
+    
+        top: -290px;
+        left: 50px;
+       
+       
+}
+
+ #cupcake-info-container:hover {
+    
+        border-color: rgba(255, 255, 255, 0.87);
+        box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+/*--------------------------------------- Shelfves --------------------------------------*/
+
+ #devide-line {
+
+    position: absolute; 
+    width: 500px;
+    height: 200px; 
+    left: 400px;
+    top: 460px;
+    
+    background-color: #f1abb998;
+    
+    opacity: 80%;
+    border-width: 12px;
+    border-color: #F1ABB9;
+    z-index: 9; 
+}
+
+ #devide-line-2 {
+
+    position: absolute;
+    width: 900px;
+    height: 300px;
+
+    left: 210px;
+    top: 930px;
+
+    border-width: 12px;
+    background-color: #f1abb998;
+  
+    opacity: 80%;
+    border-color: #F1ABB9;
+    z-index: 7;
+}
+
+ #devide-line-3 {
+
+    position: absolute;
+    width: 1100px;
+    height: 300px;
+
+    left: 110px;
+    top: 1500px;
+
+    background-color: #f1abb998;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+}
+
+ #devide-line-4 {
+
+    position: absolute;
+    width: 1300px;
+    height: 300px;
+
+    left: 10px;
+    top: 2000px;
+
+    background-color: #f1abb998;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+}
+
+/*---------------------------------- Hover for lines ------------------------------------*/
+
+ #devide-line:hover {
+       
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}
+
+ #devide-line-2:hover {
+    
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+}
+
+ #devide-line-3:hover {
+    
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+}}
+
+ @media only screen and (min-width: 1920px) {
+
+ /*------------------------------------- Navigation Section------------------------------------*/
+ 
+ .headings {
+
+    font-size: 20px;
+}    
+
+ .hamburger-menu:hover {
+
+   border-width: 20px;
+   border-radius: 100%;
+  
+   background-color: #F1ABB9;
+   box-shadow: 0 0 30px 30px #ffffff;
+   transition: 0.5s ease-in-out;
+
+}
+
+ .nav-link {
+    
+    position: relative;
+    top: 0px;
+    font-size: 25px;   
+    left: -300px;
+}
+
+ .nav-bar {
+   z-index: 100;
+}
+
+ .nav-headings {
+
+    font-size: 16px;
+    font-weight: 500;
+    
+    letter-spacing: 1.5px;
+    color: white;
+    position: absolute; 
+    
+}
+
+ .social-media-container {
+
+   width: 750px;
+   height: 95px;
+   position: absolute;
+   right: 50px;
+   top: 0;
+  
+  
+}
+
+ .instagram-container {
+
+   width: 90px;
+   height: 60px;
+   left: 0px;
+   top: -15px;
+   position: relative; 
+   float: right; 
+}
+
+ .instagram-container img {
+   
+   position: relative;
+   top: 10px;
+}
+
+ .facebook-container {
+
+   width: 60px;
+   height: 60px;
+    
+   position: relative;  
+   top: -1px; 
+   left: 0px;
+   float: right;
+}
+
+ .facebook-container img {
+
+   position: relative;
+   top: -5px;
+   left: 10px;
+   
+}
+
+ .phone-container {
+
+   position: relataive;
+   top: 5px;
+   left: 0px;
+
+   width: 220px;
+   height: 75px;
+}
+
+ .phone-container h1 {
+
+    position: absolute;
+    top: -1px;
+    left: -5px;
+
+}
+
+ .phone-container img {
+
+   position: absolute;
+   left: 0px;
+   top: 0px; 
+   width: 50px;
+   height: 50px;
+}
+
+ .email-container {
+
+   position: relative;
+   left: 0px ;
+   width: 350px;
+   top: 5px;
+   height: 75px;
+   
+   float: left;
+}
+
+ .email-container img {
+
+   position: absolute;
+   left: 0px;
+   top: 13px;
+}
+
+ .email-container h1 {
+
+    position: absolute;
+    top: -3px;
+}
+
+ .hamburger-menu {
+
+   position: fixed;
+   top: 10px;
+   left: 10px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   
+   padding: 10px;
+   background-color: #F1ABB9;
+   box-shadow: 0 0 20px white;
+   border-radius: 50%;
+       
+}
+
+/*-------------------------------------- Logo Section ------------------------------------*/
+    
+ .logo-section img {
+    
+    width: 400px;
+    height: 400px;
+    
+    top: -270px;
+    left: 50px;
+    position: absolute;
+   
+    opacity: 100%;
+    margin:  auto;
+}
+
+ .logo-section img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+ 
+}
+
+/*------------------------------------ Cakes Section------------------------------------*/
+ 
+ #gallery-cake-container img {
+
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: -10px;
+    top: -60px;
+   
+
+}
+
+ #gallery-cake-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ #cake-info-container {
+
+    width: 400px;
+    height: 450px;
+  
+    border-radius: 50px;
+    background-color: #F1ABB9;
+    
+    position: absolute;
+    left: 560px;
+    top: -260px;
+    
+    margin: auto; 
+    
+}
+
+ #cake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+/*---------------------------------- Cupcakes Section------------------------------------*/
+
+ #gallery-cupcake-container {
+
+    width: 550px;
+    height: 550px;
+    box-shadow: none;
+    position: absolute;
+     
+    top: -340px;
+    left: 600px;
+}
+
+ #gallery-cupcake-container img {
+    
+    width: 550px;
+    height: 550px;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}    
+
+ #cupcake-info-container {
+
+    width: 550px;
+    height: 500px;
+
+    border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #F1ABB9;
+
+    top: -320px;
+    left: 40px;
+}
+
+ #gallery-cupcake-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ #cupcake-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+/*---------------------------------- About Section------------------------------------*/
+
+ #about-gallery-container img {
+     
+    position: absolute;
+    width: 550px;
+    height: 550px;
+
+    left: 20px;
+    top: -335px;
+    border-radius: 50%;
+}
+
+ #about-info-container {
+
+    width: 700px;
+    height: 500px;
+  
+    border-radius: 50px;
+    background-color: #F1ABB9;
+    
+    position: absolute;
+    left: 640px;
+    top: -310px;   
+}
+
+ #about-gallery-container img:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+ #about-info-container:hover {
+
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.8s ease-in-out;
+}
+
+/*--------------------------------------- Shelfves --------------------------------------*/
+
+ #devide-line {
+
+    position: absolute; 
+    width: 500px;
+    height: 200px; 
+    left: 700px;
+    top: 460px;
+    
+    background-color: #ffd1dccc;
+    
+    opacity: 80%;
+    border-width: 12px;
+    border-color: #F1ABB9;
+    z-index: 9; 
+}
+
+ #devide-line-2 {
+
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+
+    left: 450px;
+    top: 900px;
+
+    border-width: 12px;
+    background-color: #ffd1dccc;
+  
+    opacity: 80%;
+    border-color: #F1ABB9;
+    z-index: 7;
+}
+
+ #devide-line-3 {
+
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+
+    left: 350px;
+    top: 1500px;
+
+    background-color: #ffd1dccc;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+}
+
+ #devide-line-4 {
+
+    position: absolute;
+    width: 1500px;
+    height: 300px;
+
+    left: 240px;
+    top: 2090px;
+
+    background-color: #ffd1dccc;
+    border-width: 12px;  
+    opacity: 80%;
+   
+    border-color: #F1ABB9;
+}
+
+/*-------------------------------------- Shelf Hover ------------------------------------*/
+
+ #devide-line:hover {
+   
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+transition: 0.3s ease-in-out;
+}
+
+ #devide-line-2:hover {
+
+background-color: rgba(255, 255, 255, 0.356);
+border-color: rgba(255, 255, 255, 0.87);
+box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;  
+transition: 0.3s ease-in-out;
+}
+
+ #devide-line-3:hover {
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+ #devide-line-4:hover{
+
+    background-color: rgba(255, 255, 255, 0.356);
+    border-color: rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(255, 255, 255, 0.616) 0 0 40px 30px;
+    transition: 0.3s ease-in-out;    
+}}
+
+
+
+
+    
+
+ 
+    
